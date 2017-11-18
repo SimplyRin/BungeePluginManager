@@ -11,4 +11,8 @@ public class BungeePluginManager extends Plugin {
 		ReflectionUtils.setFieldValue(ProxyServer.getInstance().getPluginManager(), "eventBus", new ModifiedPluginEventBus());
 	}
 
+	public static String getPrefix() {
+		return "§7[§cBungeePluginManager§7] ";
+	}
+
 }
